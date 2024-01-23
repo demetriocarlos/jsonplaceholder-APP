@@ -1,0 +1,101 @@
+
+.div{
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.modalOverlay{
+     
+      position: fixed;
+      right: 0rem;
+      bottom: 0.1rem;
+     z-index:2;
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.2);
+       
+      width: 100%;
+      height: 100%;
+       
+ }
+ .modalContent{
+    background-color: #e5e5e5;
+     width: 90%;
+     height: 95%;
+     margin: 0 auto;
+      /*margin-top: 0.5rem;*/
+      position: relative;
+      /*display: inline-block;*/
+ }
+ 
+ .modalImage{
+      
+     width: 500px;
+     border-radius: 2%;
+     position: relative;
+     z-index: 4;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+
+     display: block;
+  /*width: 100%;*/
+  height: auto;
+  cursor: pointer;
+ }
+ 
+ 
+ .boton{
+    
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 2.9rem;
+    border: none;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+ }
+
+ .boton:hover{
+  background-color: /*#FF2400*/ #DC143C /*#FF4500*/;
+  border-radius: 50%;
+}
+
+  
+ 
+ @media (max-width: 568px){
+    .modalOverlay{
+        grid-template-columns: 100%;
+    }
+}
+ 
+ @media (max-width: 568px){
+   .modalOverlay{
+     width: 100%;
+      
+   }
+   .modalContent{
+     width: 100%;
+   }
+ 
+   .modalImage{
+     width: 99%;
+   }
+
+    
+ }
+
+ @media (max-width: 768px){
+  .boton{
+position: absolute;
+    top: 0;
+    right: 0;
+   }
+ }

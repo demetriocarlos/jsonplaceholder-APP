@@ -1,0 +1,17 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    margin-top: 23px;
+    /*width: 400px;*/
+    border-radius: 5%;
+}
+
+@media (max-width: 780px) {
+    .img{
+        width: 100%;
+    }
+  }
